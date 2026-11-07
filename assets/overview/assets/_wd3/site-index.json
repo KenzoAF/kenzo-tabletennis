@@ -1,0 +1,738 @@
+{
+ "version": 1,
+ "tool": "wd3 0.1.0",
+ "captureId": "renderlab.aura.build-780219df",
+ "capturedAt": "2026-11-03T23:50:30+00:00",
+ "entry": {
+  "url": "https://renderlab.aura.build/",
+  "path": "/",
+  "search": "",
+  "file": "assets/renderlab.aura.build/index.html",
+  "contentType": "text/html; charset=utf-8"
+ },
+ "blocked": [
+  "^https?://([^/?#]+\\.)?(google\\-analytics\\.com|analytics\\.google\\.com|googletagmanager\\.com|googleadservices\\.com|doubleclick\\.net|googlesyndication\\.com|googleoptimize\\.com|connect\\.facebook\\.net|bat\\.bing\\.com|snap\\.licdn\\.com|px\\.ads\\.linkedin\\.com|analytics\\.tiktok\\.com|ct\\.pinterest\\.com|static\\.ads\\-twitter\\.com|analytics\\.twitter\\.com|tr\\.snapchat\\.com|sc\\-static\\.net|mc\\.yandex\\.ru|hotjar\\.com|hotjar\\.io|clarity\\.ms|cdn\\.segment\\.com|api\\.segment\\.io|cdn\\.mxpnl\\.com|api\\-js\\.mixpanel\\.com|api\\.mixpanel\\.com|api\\.amplitude\\.com|api2\\.amplitude\\.com|api\\-secure\\.amplitude\\.com|api\\-sr\\.amplitude\\.com|sr\\-client\\-cfg\\.amplitude\\.com|plausible\\.io|cloud\\.umami\\.is|analytics\\.umami\\.is|static\\.cloudflareinsights\\.com|cloudflareinsights\\.com|vitals\\.vercel\\-insights\\.com|browser\\-intake\\-datadoghq\\.com|browser\\-intake\\-datadoghq\\.eu|js\\-agent\\.newrelic\\.com|bam\\.nr\\-data\\.net|bam\\-cell\\.nr\\-data\\.net|fullstory\\.com|script\\.crazyegg\\.com|mouseflow\\.com|smartlook\\.com|heapanalytics\\.com|i\\.posthog\\.com|stats\\.wp\\.com|pixel\\.wp\\.com|promotekit\\.com|ingest\\.sentry\\.io|ingest\\.us\\.sentry\\.io|ingest\\.de\\.sentry\\.io|widget\\.intercom\\.io|js\\.intercomcdn\\.com|api\\-iam\\.intercom\\.io|js\\.hs\\-scripts\\.com|js\\.hs\\-analytics\\.net|js\\.hs\\-banner\\.com|js\\.hscollectedforms\\.net|js\\.usemessages\\.com|track\\.hubspot\\.com|client\\.crisp\\.chat|embed\\.tawk\\.to|js\\.driftt\\.com|static\\.zdassets\\.com|ekr\\.zdassets\\.com|cdn\\.cookielaw\\.org|geolocation\\.onetrust\\.com|consent\\.cookiebot\\.com|consentcdn\\.cookiebot\\.com|app\\.usercentrics\\.eu|api\\.usercentrics\\.eu|cdn\\.iubenda\\.com|cmp\\.osano\\.com|cdn\\.termly\\.io)(:\\d+)?([/?#]|$)",
+  "/rpc/increment_shared_code_views",
+  "^https?://(umami|analytics|stats|plausible)\\.[^/]+/(api/send|api/collect|api/event|script\\.js)",
+  "/g/c(ollect)?\\?v=2&",
+  "sentry\\.io/api/\\d+/(envelope|store)",
+  "/api/meta-capi",
+  "^https?://(leadtracker|tracking|track|events?|collect)\\.[^/]+/",
+  "^https?://a\\.vturb\\.com/",
+  "facebook\\.com/tr[/?]",
+  "/_vercel/(speed-)?insights/",
+  "/cdn-cgi/rum",
+  "/cdn-cgi/challenge-platform/",
+  "google\\.com/(pagead|ads)/"
+ ],
+ "volatileParams": [
+  "v",
+  "_rsc",
+  "dpl",
+  "_",
+  "t",
+  "ts",
+  "timestamp",
+  "cb",
+  "cachebust",
+  "cacheBust",
+  "nocache",
+  "rnd",
+  "rand",
+  "random",
+  "_t"
+ ],
+ "entries": [
+  {
+   "url": "https://renderlab.aura.build/",
+   "method": "GET",
+   "status": 200,
+   "contentType": "text/html; charset=utf-8",
+   "headers": {
+    "content-type": "text/html; charset=utf-8"
+   },
+   "resourceType": "document",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/renderlab.aura.build/index.html",
+   "size": 99465
+  },
+  {
+   "url": "https://cdn.tailwindcss.com/",
+   "method": "GET",
+   "status": 302,
+   "contentType": "",
+   "headers": {
+    "location": "/3.4.17"
+   },
+   "resourceType": "script",
+   "passes": [
+    "desktop"
+   ],
+   "size": 0,
+   "redirect": "https://cdn.tailwindcss.com/3.4.17",
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://cdn.tailwindcss.com/3.4.17",
+   "method": "GET",
+   "status": 200,
+   "contentType": "text/javascript",
+   "headers": {
+    "content-type": "text/javascript"
+   },
+   "resourceType": "script",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/cdn.tailwindcss.com/3.4.17.js",
+   "size": 407279,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap",
+   "method": "GET",
+   "status": 200,
+   "contentType": "text/css; charset=utf-8",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "text/css; charset=utf-8",
+    "link": "<https://fonts.gstatic.com>; rel=preconnect; crossorigin",
+    "timing-allow-origin": "*"
+   },
+   "resourceType": "stylesheet",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/fonts.googleapis.com/css2__q503db90f.css",
+   "size": 3487,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a68f7541-8a1b-424a-93f1-09dce5119566_1600w.png",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=2,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7bf3-7023-8e15-e287fe19dc7f",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a68f7541-8a1b-424a-93f1-09dce5119566_1600w.png",
+   "size": 1030068,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6686773e-846f-4380-b25f-767043a1f0c7_3840w.png",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=2,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7bed-72bb-9832-74aad3055d61",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6686773e-846f-4380-b25f-767043a1f0c7_3840w.png",
+   "size": 6064289,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a68f7541-8a1b-424a-93f1-09dce5119566_800w.png",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c6f-7573-897c-d8b3ca85592e",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a68f7541-8a1b-424a-93f1-09dce5119566_800w.png",
+   "size": 289549,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/03517ac1-a924-43ae-88b0-64089e9abe04_320w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/webp",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/webp",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c71-73f8-9f68-83f9cb5afb82",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/03517ac1-a924-43ae-88b0-64089e9abe04_320w.webp",
+   "size": 14696,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a4b4a91c-eb34-493f-93c5-9b21e5150b6f_320w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/webp",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/webp",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c71-7c30-a02c-445be2115743",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a4b4a91c-eb34-493f-93c5-9b21e5150b6f_320w.webp",
+   "size": 9744,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/344954ca-9611-41ac-bc1b-31a75d8aea93_800w.png",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c6f-7de4-84f8-225253773ab4",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/344954ca-9611-41ac-bc1b-31a75d8aea93_800w.png",
+   "size": 332837,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/eecaa97b-c019-4e07-8a6a-26aba5fb7cb8_800w.png",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c7c-732f-965a-0906319e7e1e",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/eecaa97b-c019-4e07-8a6a-26aba5fb7cb8_800w.png",
+   "size": 528779,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/robotoflex/v30/NaNeepOXO_NexZs0b5QrzlOHb8wCikXpYqmZsWI-__OGbt8jZktqc2V3Zs0KvDLdBP8SBZtOs2IifRuUZQMsPJtUsR4DEK6cULNeUx9XgTnH37Ha_FIAp4Fm0PP1hw45DntW2x0wZGzhPmr1YNMYKYn9_1IQXGwJAiUJVUMdN5YUW4O8HtSoXjC79QRyaLshNDUf9-EmF8tqHbE.woff2",
+   "method": "GET",
+   "status": 200,
+   "contentType": "font/woff2",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "font/woff2",
+    "timing-allow-origin": "*"
+   },
+   "resourceType": "font",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/fonts.gstatic.com/s/robotoflex/v30/NaNeepOXO_NexZs0b5QrzlOHb8wCikXpYqmZsWI-__OGbt8jZktqc2V3Zs0KvDLdBP8SBZtOs2IifRuU_ee84753c.woff2",
+   "size": 195712,
+   "modes": [
+    "cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a47fdc81-bd26-49ad-af4d-e2e22283b996_320w.png",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c82-72d1-b4f7-aa7dd6296cb9",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a47fdc81-bd26-49ad-af4d-e2e22283b996_320w.png",
+   "size": 207477,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/22ef6991-ea50-4ccb-a29c-7030ec44344c_1600w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=2,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c60-76f0-b2a3-d4fb0383fcd8",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/22ef6991-ea50-4ccb-a29c-7030ec44344c_1600w.webp",
+   "size": 3397870,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1dad0831-b247-4bfa-ad40-97f45c1b3a1d_800w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/webp",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/webp",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7d94-7794-b79f-40ffbd866685",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1dad0831-b247-4bfa-ad40-97f45c1b3a1d_800w.webp",
+   "size": 17168,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b8f8db61-da52-4775-acb5-334eb4a7a5ea_800w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/webp",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/webp",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7d95-77bf-88e1-c64f6c627804",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b8f8db61-da52-4775-acb5-334eb4a7a5ea_800w.webp",
+   "size": 35622,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/63813241-51b1-4e36-a62f-b31896215806_800w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/webp",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/webp",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7da2-704f-bedf-b999aa0c5749",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/63813241-51b1-4e36-a62f-b31896215806_800w.webp",
+   "size": 35524,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a0cf70ba-af36-4950-8c2a-82d1fca6a4f8_1600w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c6c-7f17-9a31-94170b20c7e6",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a0cf70ba-af36-4950-8c2a-82d1fca6a4f8_1600w.webp",
+   "size": 3058006,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/68ed498b-1878-4ade-8cbc-ee0358b3120a_1600w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c7e-7d38-8b0b-6f06dd138040",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/68ed498b-1878-4ade-8cbc-ee0358b3120a_1600w.webp",
+   "size": 3494470,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fef7d05c-e764-4d2b-9637-f72fcb33b585_1600w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=2,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c61-7d96-ab4e-391e3590fc7f",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fef7d05c-e764-4d2b-9637-f72fcb33b585_1600w.webp",
+   "size": 3020573,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/variants/2cfc7a4b-7b93-4383-bb69-3a3535aa9000/800w.png",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7d9b-7f29-b64f-3e9561ede202",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/variants/2cfc7a4b-7b93-4383-bb69-3a3535aa9000/800w.png",
+   "size": 702574,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a2052fda-9c3d-42a0-9534-bde01ab59393_1600w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c7e-7dc2-ba33-1d720a8e165d",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a2052fda-9c3d-42a0-9534-bde01ab59393_1600w.webp",
+   "size": 3289405,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6cf7e602-c9d7-47bd-ab55-8ad9bc9321d0_1600w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=2,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c60-75c6-ae46-1823c7b414d8",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6cf7e602-c9d7-47bd-ab55-8ad9bc9321d0_1600w.webp",
+   "size": 3259022,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/7149b56f-b0a9-4b9d-ab2c-3a8c0501bcfa_1600w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c80-72e2-859c-43a0c3546f5a",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/7149b56f-b0a9-4b9d-ab2c-3a8c0501bcfa_1600w.webp",
+   "size": 4216899,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/afd2542e-9cf1-4837-9a49-1d80fa4187ea_800w.webp",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7d99-7d55-ae1d-e55efb8b03db",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/afd2542e-9cf1-4837-9a49-1d80fa4187ea_800w.webp",
+   "size": 836946,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1007723b-b12a-4bab-a509-d069026135f4_3840w.png",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/png",
+   "headers": {
+    "access-control-allow-origin": "*",
+    "content-type": "image/png",
+    "priority": "u=3,i",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-7c86-7486-9252-4beecfcdb27d",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "image",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1007723b-b12a-4bab-a509-d069026135f4_3840w.png",
+   "size": 5330562,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/generated-videos/2e815afb-cac1-4c01-90e1-cf3810246e35/1785705544798-f231f882-ddfd-4466-b727-f21f19e11407.mp4",
+   "method": "GET",
+   "status": 200,
+   "contentType": "video/mp4",
+   "headers": {
+    "content-type": "video/mp4",
+    "access-control-allow-origin": "*",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-project-ref": "hoirqrkdgbmvpwutwuwj",
+    "sb-request-id": "01a1a3d2-bf02-7a03-a62c-92d135c15d61",
+    "x-robots-tag": "none",
+    "x-smart-cdn": "true"
+   },
+   "resourceType": "media",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/generated-videos/2e815afb-cac1-4c01-90e1-cf3810246e35/1785705544798-f231f882-ddfd-4466-b727-f21f19e11407.mp4",
+   "size": 4062563,
+   "modes": [
+    "no-cors"
+   ]
+  },
+  {
+   "url": "https://renderlab.aura.build/favicon.ico",
+   "method": "GET",
+   "status": 200,
+   "contentType": "image/vnd.microsoft.icon",
+   "headers": {
+    "cache-status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+    "content-type": "image/vnd.microsoft.icon",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-nf-request-id": "01M6HX5FQ4WSQ3AQF9TVQ32CBM"
+   },
+   "resourceType": "other",
+   "passes": [
+    "desktop"
+   ],
+   "file": "assets/renderlab.aura.build/favicon.ico",
+   "size": 696
+  }
+ ],
+ "adapter": {
+  "name": "aura-html",
+  "notes": [
+   "site extraído do iframe srcdoc; 3 scripts do Aura removidos"
+  ]
+ },
+ "videos": {
+  "posters": {},
+  "onlineHosts": []
+ }
+}

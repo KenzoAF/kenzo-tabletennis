@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RenderLab — Design System</title>
+  <style>
+    :root {
+      --bg: #141414;
+      --fg: #e5e5e5;
+      --paper: #f2f2ef;
+      --muted: #9a9a96;
+      --line: rgba(229, 229, 229, 0.08);
+      --strong: rgba(229, 229, 229, 0.16);
+      --acid: #02ff6f;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.875rem;
+      line-height: 1.45;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Fixed Catalog Header */
+    header.catalog-header {
+      position: relative;
+      z-index: 50;
+      border-bottom: 1px solid var(--strong);
+      background: var(--bg);
+      height: 4.75rem;
+    }
+    nav.catalog-nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr minmax(4rem, 0.55fr) 1fr 1fr;
+      align-items: stretch;
+      height: 100%;
+      margin: 0 clamp(1rem, 2vw, 2rem);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      color: inherit;
+      text-decoration: none;
+      border-right: 1px solid var(--line);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+    .nav-tabs {
+      display: flex;
+      align-items: stretch;
+      border-right: 1px solid var(--line);
+    }
+    .tab-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      transition: color 0.15s, background-color 0.15s;
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+      outline: none;
+    }
+    .tab-btn:hover {
+      color: var(--fg);
+    }
+    .tab-btn.active {
+      color: var(--paper);
+      font-weight: 600;
+      box-shadow: inset 0 -2px 0 var(--acid);
+    }
+    .tab-btn[disabled], .tab-btn.disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .nav-center {
+      display: grid;
+      place-items: center;
+      border-right: 1px solid var(--line);
+      padding: 0.65rem;
+    }
+    .glyph-mark {
+      position: relative;
+      display: block;
+      width: 2.8rem;
+      aspect-ratio: 1;
+      background: #090909;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .glyph-dot {
+      position: absolute;
+      width: 1.55rem;
+      height: 1.55rem;
+      left: 0.55rem;
+      top: 0.55rem;
+      border-radius: 50%;
+      background: var(--acid);
+    }
+    .glyph-cut {
+      position: absolute;
+      width: 1.45rem;
+      height: 1.45rem;
+      left: 0.94rem;
+      top: 0.32rem;
+      border-radius: 50%;
+      background: #090909;
+    }
+    .glyph-accent {
+      position: absolute;
+      width: 0.28rem;
+      height: 0.28rem;
+      right: 0.28rem;
+      bottom: 0.28rem;
+      background: var(--acid);
+    }
+    .nav-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      border-right: 1px solid var(--line);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+    .nav-status {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: var(--muted);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+    }
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.65rem;
+      background: rgba(2, 255, 111, 0.08);
+      border: 1px solid rgba(2, 255, 111, 0.25);
+      color: var(--acid);
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+    .status-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--acid);
+    }
+
+    /* Main Display Frame */
+    main#catalog-viewport {
+      width: 100%;
+      height: calc(100vh - 4.75rem);
+      position: relative;
+    }
+    iframe#overviewFrame {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      background: var(--bg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Catalog Unified Navbar -->
+  <header class="catalog-header">
+    <nav class="catalog-nav" aria-label="Design System Navigation">
+      <a href="#overview" class="nav-brand">
+        RENDERLAB / DS
+      </a>
+
+      <!-- Overview | Components Navigation -->
+      <div class="nav-tabs" role="tablist">
+        <button class="tab-btn active" id="tabOverview" role="tab" aria-selected="true" onclick="selectView('overview')">
+          OVERVIEW
+        </button>
+        <button class="tab-btn disabled" id="tabComponents" role="tab" aria-selected="false" disabled title="Aguardando aprovação do Overview">
+          COMPONENTS
+        </button>
+      </div>
+
+      <!-- Brand Glyph -->
+      <div class="nav-center">
+        <span class="glyph-mark">
+          <span class="glyph-dot"></span>
+          <span class="glyph-cut"></span>
+          <span class="glyph-accent"></span>
+        </span>
+      </div>
+
+      <!-- Version / Environment -->
+      <div class="nav-meta">
+        DS-v1.0 · CATALOG
+      </div>
+
+      <!-- Status Gate Indicator -->
+      <div class="nav-status">
+        <span class="status-badge" id="approvalStatus">
+          Phase 1: Overview
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Viewport Area -->
+  <main id="catalog-viewport">
+    <iframe id="overviewFrame" src="assets/overview/index.html" title="RenderLab Design System Overview"></iframe>
+  </main>
+
+  <script>
+    function selectView(view) {
+      if (view === 'overview') {
+        location.hash = '#overview';
+        document.getElementById('tabOverview').classList.add('active');
+        document.getElementById('tabComponents').classList.remove('active');
+      }
+    }
+
+    // Sync state with location hash
+    window.addEventListener('hashchange', () => {
+      if (location.hash === '#components' && document.getElementById('tabComponents').hasAttribute('disabled')) {
+        location.hash = '#overview';
+      }
+    });
+  </script>
+</body>
+</html>

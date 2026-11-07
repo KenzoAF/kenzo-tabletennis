@@ -1,0 +1,1601 @@
+﻿<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="RenderLab Ã¢â‚¬â€ a premium motion house specializing in cinematic 3D rendering, motion direction, CGI and VFX.">
+<title>RenderLab Ã¢â‚¬â€ Motion House</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+[data-hover-media]:hover img { transform: scale(1.055) !important; }
+</style></head>
+
+  <body style="--bg:#141414;--fg:#e5e5e5;--paper:#f2f2ef;--muted:#9a9a96;--line:rgba(229,229,229,.08);--strong:rgba(229,229,229,.16);--acid:#02ff6f;margin:0;overflow-x:hidden;background:var(--bg);color:var(--fg);font-family:Inter,Helvetica,Arial,sans-serif;font-size:0.875rem;line-height:1.45;-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision;" class="">
+    <a href="#main" style="position: fixed; left: 1rem; top: -5rem; z-index: 9999; background: var(--paper); color: rgb(20, 20, 20); padding: 0.75rem 1rem; text-decoration: none; font-weight: 600;" onfocus="this.style.top='1rem'" onblur="this.style.top='-5rem'" class="">
+      Skip to content
+    </a>
+
+    <div aria-hidden="true" style="position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(to right,transparent calc(100% - 1px),var(--line) 1px);background-size:8.333333% 100%;margin:0 clamp(1rem,2vw,2rem);" class=""></div>
+
+    <div id="cursorLabel" aria-hidden="true" style="position:fixed;left:0;top:0;z-index:900;pointer-events:none;opacity:0;transform:translate3d(-10rem,-10rem,0);background:#080808;color:#f2f2ef;border:1px solid rgba(255,255,255,.2);padding:.35rem .5rem;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;" class=""></div>
+
+    <div id="progress" aria-hidden="true" style="position:fixed;left:50%;bottom:.75rem;z-index:850;width:4rem;height:.35rem;transform:translateX(-50%);background:rgba(242,242,239,.18);overflow:hidden;border:1px solid rgba(242,242,239,.12);" class="">
+      <span id="progressBar" style="display:block;width:100%;height:100%;transform:scaleX(0);transform-origin:left;background:var(--paper);" class=""></span>
+    </div>
+
+    <header style="position:relative;z-index:50;border-bottom:1px solid var(--strong);" class="">
+      <nav aria-label="Primary navigation" style="display:grid;grid-template-columns:1fr 1fr minmax(4rem,.55fr) 1fr 1fr;align-items:stretch;min-height:4.75rem;margin:0 clamp(1rem,2vw,2rem);" class="">
+        <a href="#hero" style="display:flex;align-items:center;color:inherit;text-decoration:none;border-right:1px solid var(--line);font-size:.75rem;letter-spacing:.08em;" class="">
+          HOME
+        </a>
+        <a href="#work" style="display:flex;align-items:center;justify-content:center;color:inherit;text-decoration:none;border-right:1px solid var(--line);font-size:.75rem;letter-spacing:.08em;" class="">
+          WORK
+        </a>
+        <button id="themeToggle" type="button" aria-label="Toggle light and dark theme" aria-pressed="false" style="display:grid;place-items:center;border:0;border-right:1px solid var(--line);background:transparent;color:inherit;cursor:pointer;padding:.65rem;">
+          <span style="position:relative;display:block;width:2.8rem;aspect-ratio:1;background:#090909;overflow:hidden;border:1px solid rgba(255,255,255,.12);">
+            <span style="position:absolute;width:1.55rem;height:1.55rem;left:.55rem;top:.55rem;border-radius:50%;background:var(--acid);"></span>
+            <span style="position:absolute;width:1.45rem;height:1.45rem;left:.94rem;top:.32rem;border-radius:50%;background:#090909;"></span>
+            <span style="position:absolute;width:.28rem;height:.28rem;right:.28rem;bottom:.28rem;background:var(--acid);"></span>
+          </span>
+        </button>
+        <a href="#articles" style="display:flex;align-items:center;justify-content:center;color:inherit;text-decoration:none;border-right:1px solid var(--line);font-size:.75rem;letter-spacing:.08em;">
+          BLOGS
+        </a>
+        <a href="#contact" style="display:flex;align-items:center;justify-content:flex-end;color:inherit;text-decoration:none;font-size:.75rem;letter-spacing:.08em;" class="">
+          WAITLIST
+        </a>
+      </nav>
+    </header>
+
+    <main id="main" class="">
+      <section aria-labelledby="heroTitle" style="position: relative; min-height: calc(-4.75rem + 100svh); overflow: hidden; border-bottom: 1px solid var(--strong)" class="" id="hero">
+        <div aria-label="Six-panel abstract motion artwork" style="position: absolute; inset: 0px; display: grid; place-items: center; perspective: 75rem; transform-style: preserve-3d; will-change: transform" class="flex justify-between uppercase" id="heroTitle">
+          <div class="relative w-full h-full bg-transparent" style="height: 400px; display: flex; align-items: center; justify-content: center" id="text-pressure-container">
+            <style>
+              @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap');
+
+              .stroke span {
+                position: relative;
+                color: #ffffff;
+              }
+
+              .stroke span::after {
+                content: attr(data-char);
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: transparent;
+                z-index: -1;
+                -webkit-text-stroke-width: 0px;
+                -webkit-text-stroke-color: #ff0000;
+              }
+
+              @keyframes floatAnimation {
+                0%, 100% {
+                  transform: translate(-50%, 0%) translate3d(0, 0px, 0) rotate(0deg);
+                  filter: blur(0px);
+                }
+                50% {
+                  transform: translate(-50%, 0%) translate3d(0, 8px, 0) rotate(1.0347deg);
+                  filter: blur(0px);
+                }
+              }
+              .hero-float-animation {
+                animation: floatAnimation 6s ease-in-out infinite;
+              }
+            </style>
+            <h1 class="text-pressure-title flex justify-between uppercase text-center w-full" style="font-family: &quot;Roboto Flex&quot;, sans-serif; font-size: 380px; line-height: 1; margin: 0px; font-weight: 100; color: rgb(255, 255, 255); padding: 0px 1rem;" id="text-pressure-title">
+              <span data-char="R" class="inline-block relative" style="font-variation-settings: &quot;wght&quot; 145, &quot;wdth&quot; 15, &quot;ital&quot; 0.05;">
+                R
+              </span>
+              <span data-char="E" class="inline-block relative" style="font-variation-settings: &quot;wght&quot; 243, &quot;wdth&quot; 36, &quot;ital&quot; 0.16;">
+                E
+              </span>
+              <span data-char="N" class="inline-block relative" style="font-variation-settings: &quot;wght&quot; 400, &quot;wdth&quot; 71, &quot;ital&quot; 0.33;">
+                N
+              </span>
+              <span data-char="D" class="inline-block relative" style="font-variation-settings: &quot;wght&quot; 673, &quot;wdth&quot; 132, &quot;ital&quot; 0.64;">
+                D
+              </span>
+              <span data-char="E" class="inline-block relative" style="font-variation-settings: &quot;wght&quot; 962, &quot;wdth&quot; 196, &quot;ital&quot; 0.96;">
+                E
+              </span>
+              <span data-char="R" class="inline-block relative" style="font-variation-settings: &quot;wght&quot; 617, &quot;wdth&quot; 119, &quot;ital&quot; 0.57;">
+                R
+              </span>
+              <span data-char="L" class="inline-block relative" style="font-variation-settings: &quot;wght&quot; 384, &quot;wdth&quot; 68, &quot;ital&quot; 0.32;">
+                L
+              </span>
+              <span data-char="A" class="inline-block relative" style="font-variation-settings: &quot;wght&quot; 245, &quot;wdth&quot; 37, &quot;ital&quot; 0.16;">
+                A
+              </span>
+              <span data-char="B" class="inline-block relative" style="font-variation-settings: &quot;wght&quot; 143, &quot;wdth&quot; 14, &quot;ital&quot; 0.05;">
+                B
+              </span>
+            </h1>
+            <script>
+                (function() {const container = document.getElementById('text-pressure-container');const title = document.getElementById('text-pressure-title');if (!container || !title) return;const spans = Array.from(title.querySelectorAll('span'));let mouse = { x: 0, y: 0 };let cursor = { x: 0, y: 0 };const dist = (a, b) => {const dx = b.x - a.x;const dy = b.y - a.y;return Math.sqrt(dx * dx + dy * dy);};
+                const getAttr = (distance, maxDist, minVal, maxVal) => {const val = maxVal - Math.abs((maxVal * distance) / maxDist);return Math.max(minVal, val + minVal);};
+                const handleMouseMove = e => {cursor.x = e.clientX;cursor.y = e.clientY;};
+                const handleTouchMove = e => {cursor.x = e.touches[0].clientX;cursor.y = e.touches[0].clientY;};
+                window.addEventListener('mousemove', handleMouseMove);
+                window.addEventListener('touchmove', handleTouchMove, { passive: true });
+                const initMouse = () => {
+                  const rect = container.getBoundingClientRect();
+                  mouse.x = rect.left + rect.width / 2;
+                  mouse.y = rect.top + rect.height / 2;
+                  cursor.x = mouse.x;
+                  cursor.y = mouse.y;
+                };
+                initMouse();
+                const setSize = () => {
+                  const rect = container.getBoundingClientRect();
+                  let newFontSize = rect.width / (spans.length / 2.65);
+                  newFontSize = Math.max(newFontSize, 36);
+                  title.style.fontSize = newFontSize + 'px';
+                };
+                setSize();
+                window.addEventListener('resize', setSize);
+                let rafId;
+                const animate = () => {
+                  mouse.x += (cursor.x - mouse.x) / 15;
+                  mouse.y += (cursor.y - mouse.y) / 15;
+                  const titleRect = title.getBoundingClientRect();
+                  const maxDist = titleRect.width / 2;
+                  spans.forEach(span => {
+                    const rect = span.getBoundingClientRect();
+                    const charCenter = {
+                      x: rect.x + rect.width / 2,
+                      y: rect.y + rect.height / 2
+                    };
+                    const d = dist(mouse, charCenter);
+                    const wdth = Math.floor(getAttr(d, maxDist, 5, 200));
+                    const wght = Math.floor(getAttr(d, maxDist, 100, 900));
+                    const italVal = getAttr(d, maxDist, 0, 1).toFixed(2);
+                    const newFontVariationSettings = `'wght' ${wght}, 'wdth' ${wdth}, 'ital' ${italVal}`;
+                    if (span.style.fontVariationSettings !== newFontVariationSettings) {
+                      span.style.fontVariationSettings = newFontVariationSettings;
+                    }
+                  });
+                  rafId = requestAnimationFrame(animate);
+                };
+                animate();
+              })();
+            </script>
+          </div>
+        </div>
+
+        <div aria-label="Six-panel abstract motion artwork" style="position: absolute; inset: 0px; display: grid; place-items: center; perspective: 75rem; transform-style: preserve-3d; will-change: transform;" class="" id="heroScene">
+          <div style="position: relative; width: min(75vw, 74rem); height: min(44vw, 36rem); transform-style: preserve-3d; will-change: transform" class="" id="heroRing">
+            <img data-reveal="" data-float="" class="-translate-x-1/2 md:h-[52rem] md:w-[36rem] w-[28rem] h-[44rem] object-contain absolute bottom-0 left-1/2 hero-float-animation" style="object-fit: contain; display: block; object-position: bottom center; filter: drop-shadow(0 0 48px rgba(0,0,0,0.7));" src="../athlete/kenzo_forehand_drive.png" alt="Kenzo Arita Fugimoto">
+          </div>
+        </div>
+
+        <div style="position: absolute; left: clamp(1rem, 2vw, 2rem); bottom: 1.3rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.75rem; color: var(--muted);" class="">
+          MOTION / CGI / VFX
+        </div>
+        <div style="position: absolute; right: clamp(1rem, 2vw, 2rem); bottom: 1.3rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.75rem; color: var(--muted);" class="">
+          SCROLL TO RENDERLAB Ã¢â€ â€œ
+        </div>
+      </section>
+
+      <section id="manifesto" style="padding:clamp(5rem,10vw,10rem) clamp(1rem,2vw,2rem);border-bottom:1px solid var(--strong);" class="">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,25rem),1fr));gap:clamp(3rem,8vw,9rem);align-items:start;" class="">
+          <p style="max-width:42rem;margin:0;font-size:clamp(1.25rem,2.2vw,2.2rem);line-height:1.18;letter-spacing:-.035em;" class="">
+            RenderLab is a premier motion house dedicated to hyper-realistic 3D
+            rendering. We craft cinematic visual narratives that transform
+            digital products into tactile, unforgettable experiences.
+          </p>
+          <div style="display:flex;justify-content:flex-end;">
+            <span style="max-width:17rem;color:var(--muted);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;text-transform:uppercase;">
+              Independent image makers building physically expressive digital
+              worlds.
+            </span>
+          </div>
+        </div>
+
+        <div style="margin-top:clamp(6rem,11vw,12rem);font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(6rem,14vw,15rem);font-weight:500;line-height:.78;letter-spacing:-.055em;text-transform:lowercase;color:var(--paper);" class="">
+          <div class="">letÃ¢â‚¬â„¢s</div>
+          <div style="display:flex;align-items:center;white-space:nowrap;" class="">
+            aut
+            <button id="playArt" type="button" aria-label="Pause manifesto artwork" aria-pressed="true" style="position:relative;flex:0 0 .78em;width:.78em;height:.78em;margin:0 .03em;border:0;background:#e7ad9f;cursor:pointer;overflow:hidden;padding:0;" class="">
+              <video src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/generated-videos/2e815afb-cac1-4c01-90e1-cf3810246e35/1785705544798-f231f882-ddfd-4466-b727-f21f19e11407.mp4" poster="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6686773e-846f-4380-b25f-767043a1f0c7_3840w.png" data-aura-generated-video="true" data-aura-video-preset="loop-in-view" muted="" playsinline="" preload="metadata" loop="" data-art="ribbon" aria-hidden="true" style="display:block;width:100%;height:100%" class="object-cover object-center"></video>
+              <span style="position: absolute; inset: 12%; border: 1px solid rgba(255, 255, 255, 0.8); border-radius: 50%; display: grid; place-items: center;" class="">
+                <span id="playGlyph" style="display:grid;place-items:center;width:42%;height:42%;border:1px solid white;border-radius:50%;font-family:Arial,sans-serif;font-size:.12em;letter-spacing:0;color:white;">
+                  Ã¢â€¦Â¡
+                </span>
+              </span>
+            </button>
+            mate
+          </div>
+          <div class="">excellence</div>
+        </div>
+      </section>
+
+      <section aria-label="Selected clients" style="overflow:hidden;border-bottom:1px solid var(--strong);padding:2rem 0;">
+        <style>
+          @keyframes marqueeSelectedClients { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-50%, 0, 0); } }
+        </style>
+        <div data-marquee="" data-speed="-34" style="display:flex;width:max-content;will-change:transform;animation: marqueeSelectedClients 20s linear infinite;">
+          <div style="display:flex;align-items:center;gap:clamp(3rem,8vw,9rem);padding-right:clamp(3rem,8vw,9rem);font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(2rem,4vw,4rem);letter-spacing:-.035em;white-space:nowrap;">
+            <span>21</span>
+            <span>the agency</span>
+            <span>Rustic</span>
+            <span>NTW</span>
+            <span>redbox</span>
+            <span>EXEO</span>
+          </div>
+          <div aria-hidden="true" style="display:flex;align-items:center;gap:clamp(3rem,8vw,9rem);padding-right:clamp(3rem,8vw,9rem);font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(2rem,4vw,4rem);letter-spacing:-.035em;white-space:nowrap;">
+            <span>21</span>
+            <span>the agency</span>
+            <span>Rustic</span>
+            <span>NTW</span>
+            <span>redbox</span>
+            <span>EXEO</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" style="padding:clamp(5rem,9vw,9rem) clamp(1rem,2vw,2rem);border-bottom:1px solid var(--strong);" class="">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3rem;padding-bottom:1rem;border-bottom:1px solid var(--strong);" class="">
+          <span style="font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;" class="">
+            Ã¢â€”Â FEATURED WORK
+          </span>
+          <span style="color:var(--muted);font-size:.75rem;">
+            SELECTED / 2024Ã¢â‚¬â€2026
+          </span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,31rem),1fr));gap:clamp(2.5rem,5vw,5rem) clamp(1rem,2vw,2rem)" class="" id="workGrid">
+          <article data-project="Pino Liso" class="">
+            <div data-hover-media="" style="position:relative;aspect-ratio:1.35;overflow:hidden;background:#1a1a1a;cursor:crosshair;" class="">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fef7d05c-e764-4d2b-9637-f72fcb33b585_1600w.webp" alt="Raquete Pino Liso — Ofensivo" style="display: block; width: 100%; height: 100%; object-fit: contain; background:#111; padding: 1.5rem;" class="">
+              <canvas data-pixels="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;"></canvas>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:1rem;padding-top:1rem;border-top:1px solid var(--strong);" class="">
+              <h3 data-title="" style="margin:0;font-size:clamp(1.3rem,2vw,2rem);font-weight:500;letter-spacing:-.035em;">
+                Velocity Run
+              </h3>
+              <span style="color:var(--muted);">Borracha Ofensiva</span>
+            </div>
+          </article>
+          <article data-project="Pino Curto" class="">
+            <div data-hover-media="" style="position:relative;aspect-ratio:1.35;overflow:hidden;background:#6bcfe1;cursor:crosshair;" class="">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/22ef6991-ea50-4ccb-a29c-7030ec44344c_1600w.webp" alt="Raquete Pino Curto — Agressivo" style="display: block; width: 100%; height: 100%; object-fit: contain; background:#111; padding: 1.5rem;" class="">
+              <canvas data-pixels="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;"></canvas>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:1rem;padding-top:1rem;border-top:1px solid var(--strong);" class="">
+              <h3 data-title="" style="margin:0;font-size:clamp(1.3rem,2vw,2rem);font-weight:500;letter-spacing:-.035em;" class="">
+                Lumina Glass
+              </h3>
+              <span style="color:var(--muted);">Ataque Rápido</span>
+            </div>
+          </article>
+          <article data-project="Pino Longo" class="">
+            <div data-hover-media="" style="position:relative;aspect-ratio:1.35;overflow:hidden;background:#7765cf;cursor:crosshair;" class="">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6cf7e602-c9d7-47bd-ab55-8ad9bc9321d0_1600w.webp" alt="Raquete Pino Longo — Defensivo" style="display: block; width: 100%; height: 100%; object-fit: contain; background:#111; padding: 1.5rem;" class="">
+              <canvas data-pixels="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;"></canvas>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:1rem;padding-top:1rem;border-top:1px solid var(--strong);" class="">
+              <h3 data-title="" style="margin:0;font-size:clamp(1.3rem,2vw,2rem);font-weight:500;letter-spacing:-.035em;" class="">
+                Carbon EdgeÃ¢â€žÂ¢
+              </h3>
+              <span style="color:var(--muted);">Defesa Especializada</span>
+            </div>
+          </article>
+          <article data-project="Anti-Spin" class="">
+            <div data-hover-media="" style="position:relative;aspect-ratio:1.35;overflow:hidden;background:#a98ea5;cursor:crosshair;" class="">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a0cf70ba-af36-4950-8c2a-82d1fca6a4f8_1600w.webp" alt="Raquete Anti-Spin — Controle" style="display: block; width: 100%; height: 100%; object-fit: contain; background:#111; padding: 1.5rem;" class="">
+              <canvas data-pixels="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;"></canvas>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:1rem;padding-top:1rem;border-top:1px solid var(--strong);" class="">
+              <h3 data-title="" style="margin:0;font-size:clamp(1.3rem,2vw,2rem);font-weight:500;letter-spacing:-.035em;" class="">
+                Aether Tech
+              </h3>
+              <span style="color:var(--muted);">Motion Graphics</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="relative w-full border-b border-[var(--strong)] overflow-visible">
+        <div class="hidden" aria-hidden="true">
+          <span id="serviceNumber"></span>
+          <h2 id="serviceTitle"></h2>
+          <ol id="serviceList"></ol>
+          <span id="serviceIndex"></span>
+          <div id="serviceGeometry"></div>
+        </div>
+
+        <div class="scroll-stack-inner pt-[10vh] px-[clamp(1rem,2vw,2rem)] pb-[20rem] min-h-screen relative overflow-visible">
+          <div class="pb-4 border-b border-[var(--strong)] font-mono text-xs mb-8 flex justify-between">
+            <span>Ã¢â€”Â SERVICES</span>
+            <span class="text-[var(--muted)]">01 / 03</span>
+          </div>
+
+          <div class="scroll-stack-card relative w-full my-8 p-8 md:p-12 rounded-[40px] shadow-[0_0_30px_rgba(0,0,0,0.3)] box-border origin-top will-change-transform bg-[#1a1a1a] border border-[var(--strong)] sticky top-20" style="backface-visibility: hidden; transform-style: preserve-3d; z-index: 10;">
+            <div class="grid grid-cols-1 md:grid-cols-[14rem_minmax(0,24rem)] lg:grid-cols-[14rem_minmax(0,24rem)_1fr] gap-8 md:gap-16 items-center">
+              <div style="font-family:Impact,'Arial Narrow',sans-serif; font-size:clamp(8rem,20vw,12rem); line-height:.76; letter-spacing:-.08em; color:var(--paper);">
+                01
+              </div>
+              <div>
+                <h2 style="margin:0 0 2rem; font-family:Impact,'Arial Narrow',sans-serif; font-size:clamp(3.5rem,8vw,8rem); font-weight:500; line-height:.84; letter-spacing:-.05em;">
+                  MOTION
+                  <br>
+                  DIRECTION
+                </h2>
+                <ul style="border-top:1px solid var(--strong); padding:1rem 0 0; margin:0; list-style:none;">
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Storyboarding
+                  </li>
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Camera Choreography
+                  </li>
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Kinetic Typography
+                  </li>
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Animatic Production
+                  </li>
+                </ul>
+              </div>
+              <div class="hidden lg:flex justify-end items-center w-full h-[250px] xl:h-[350px]">
+                <img src="../athlete/kenzo_forehand_drive.png" alt="Kenzo Forehand Drive" class="h-full w-full object-contain object-right drop-shadow-2xl">
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-stack-card relative w-full my-8 p-8 md:p-12 rounded-[40px] shadow-[0_0_30px_rgba(0,0,0,0.3)] box-border origin-top will-change-transform bg-[#222] border border-[var(--strong)] sticky top-28" style="backface-visibility: hidden; transform-style: preserve-3d; z-index: 20;">
+            <div class="grid grid-cols-1 md:grid-cols-[14rem_minmax(0,24rem)] lg:grid-cols-[14rem_minmax(0,24rem)_1fr] gap-8 md:gap-16 items-center">
+              <div style="font-family:Impact,'Arial Narrow',sans-serif; font-size:clamp(8rem,20vw,12rem); line-height:.76; letter-spacing:-.08em; color:var(--paper);">
+                02
+              </div>
+              <div>
+                <h2 style="margin:0 0 2rem; font-family:Impact,'Arial Narrow',sans-serif; font-size:clamp(3.5rem,8vw,8rem); font-weight:500; line-height:.84; letter-spacing:-.05em;">
+                  CGI
+                </h2>
+                <ul style="border-top:1px solid var(--strong); padding:1rem 0 0; margin:0; list-style:none;">
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Photorealistic Lighting
+                  </li>
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Material Texturing
+                  </li>
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Digital Product Twins
+                  </li>
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Environment Design
+                  </li>
+                </ul>
+              </div>
+              <div class="hidden lg:flex justify-end items-center w-full h-[250px] xl:h-[350px]">
+                <img src="../athlete/kenzo_forehand_drive.png" alt="Kenzo Backhand Flick" class="h-full w-full object-contain object-right drop-shadow-2xl">
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-stack-card relative w-full my-8 p-8 md:p-12 rounded-[40px] shadow-[0_0_30px_rgba(0,0,0,0.3)] box-border origin-top will-change-transform bg-[#2a2a2a] border border-[var(--strong)] sticky top-36" style="backface-visibility: hidden; transform-style: preserve-3d; z-index: 30;">
+            <div class="grid grid-cols-1 md:grid-cols-[14rem_minmax(0,24rem)] lg:grid-cols-[14rem_minmax(0,24rem)_1fr] gap-8 md:gap-16 items-center">
+              <div style="font-family:Impact,'Arial Narrow',sans-serif; font-size:clamp(8rem,20vw,12rem); line-height:.76; letter-spacing:-.08em; color:var(--paper);">
+                03
+              </div>
+              <div>
+                <h2 style="margin:0 0 2rem; font-family:Impact,'Arial Narrow',sans-serif; font-size:clamp(3.5rem,8vw,8rem); font-weight:500; line-height:.84; letter-spacing:-.05em;">
+                  VFX
+                </h2>
+                <ul style="border-top:1px solid var(--strong); padding:1rem 0 0; margin:0; list-style:none;">
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Fluid Dynamics
+                  </li>
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Particle Simulations
+                  </li>
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    3D Compositing
+                  </li>
+                  <li style="padding:.85rem 0; border-bottom:1px solid var(--line);">
+                    Motion Tracking
+                  </li>
+                </ul>
+              </div>
+              <div class="hidden lg:flex justify-end items-center w-full h-[250px] xl:h-[350px]">
+                <img src="../athlete/kenzo_forehand_drive.png" alt="Kenzo Pendulum Serve" class="h-full w-full object-contain object-right drop-shadow-2xl">
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-stack-end w-full h-px"></div>
+        </div>
+      </section>
+
+      <section id="impact" style="padding:clamp(5rem,9vw,9rem) clamp(1rem,2vw,2rem);border-bottom:1px solid var(--strong);" class="">
+        <div style="padding-bottom:1rem;border-bottom:1px solid var(--strong);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;">
+          Ã¢â€”Â IMPACT
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));" class="">
+          <article style="padding:3rem 2rem 4rem 0;border-right:1px solid var(--line);" class="">
+            <strong data-counter="85" data-suffix="+" style="display:block;font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(6rem,13vw,13rem);font-weight:500;line-height:.8;letter-spacing:-.05em;">
+              0+
+            </strong>
+            <h3 style="font-size:1.25rem;font-weight:500;">Campaigns</h3>
+            <p style="max-width:22rem;color:var(--muted);">
+              High-fidelity broadcast commercials delivered from storyboard to
+              screen.
+            </p>
+          </article>
+          <article style="padding:3rem 2rem 4rem;border-right:1px solid var(--line);">
+            <strong data-counter="8" data-suffix="+" style="display:block;font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(6rem,13vw,13rem);font-weight:500;line-height:.8;letter-spacing:-.05em;">
+              0+
+            </strong>
+            <h3 style="font-size:1.25rem;font-weight:500;">Global Brands</h3>
+            <p style="max-width:22rem;color:var(--muted);">
+              Partnering with industry-leading labels to visualize their next
+              flagship.
+            </p>
+          </article>
+          <article style="padding:3rem 0 4rem 2rem;">
+            <strong data-counter="15" data-suffix="" style="display:block;font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(6rem,13vw,13rem);font-weight:500;line-height:.8;letter-spacing:-.05em;">
+              0
+            </strong>
+            <h3 style="font-size:1.25rem;font-weight:500;">Accolades</h3>
+            <p style="max-width:22rem;color:var(--muted);">
+              Honored by Motionographer, D&amp;AD, and the Clios for visual
+              excellence.
+            </p>
+          </article>
+        </div>
+        <script>
+          (function() {
+            const observer = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const target = entry.target;
+                if (target.dataset.animated) return;
+                target.dataset.animated = "true";
+                const finalValue = parseInt(target.dataset.counter || "0", 10);
+                const suffix = target.dataset.suffix || "";
+                const duration = 2000;
+                const start = performance.now();
+                const step = now => {
+                  const progress = Math.min(1, (now - start) / duration);
+                  const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                  const current = Math.floor(easeOutQuart * finalValue);
+                  target.textContent = current + suffix;
+                  if (progress < 1) {
+                    requestAnimationFrame(step);
+                  } else {
+                    target.textContent = finalValue + suffix;
+                  }
+                };
+                requestAnimationFrame(step);
+              });
+            }, { threshold: 0.5 });
+            document.querySelectorAll('#impact [data-counter]').forEach(el => observer.observe(el));
+          })();
+        </script>
+      </section>
+
+      <section style="padding:clamp(5rem,9vw,9rem) clamp(1rem,2vw,2rem);border-bottom:1px solid var(--strong);" class="">
+        <div style="padding-bottom:1rem;border-bottom:1px solid var(--strong);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;" class="">
+          Ã¢â€”Â TESTIMONIALS
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));" class="">
+          <blockquote style="margin:0;padding:3rem clamp(1rem,3vw,3rem) 4rem 0;border-right:1px solid var(--line);" class="">
+            <p style="margin:0 0 4rem;font-size:clamp(1.4rem,2.5vw,2.4rem);line-height:1.15;letter-spacing:-.035em;" class="">
+              Ã¢â‚¬Å“Flux &amp; Form didnÃ¢â‚¬â„¢t just build our websiteÃ¢â‚¬â€they engineered an
+              experience. Every interaction feels intentional, and fast.Ã¢â‚¬Â
+            </p>
+            <footer style="display:flex;align-items:center;gap:.8rem;" class="">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/03517ac1-a924-43ae-88b0-64089e9abe04_320w.webp" aria-hidden="true" style="width:3rem;height:3rem;border-radius:50%;object-fit:cover;">
+              <span>
+                <strong style="display:block;font-weight:500;">
+                  Henrik Dahl
+                </strong>
+                <small style="color:var(--muted);">CTO, Stratos AI</small>
+              </span>
+            </footer>
+          </blockquote>
+          <blockquote style="margin:0;padding:3rem clamp(1rem,3vw,3rem) 4rem;border-right:1px solid var(--line);" class="">
+            <p style="margin:0 0 4rem;font-size:clamp(1.4rem,2.5vw,2.4rem);line-height:1.15;letter-spacing:-.035em;" class="">
+              Ã¢â‚¬Å“We needed a site that matched the precision of our product. Flux
+              &amp; Form delivered exactly thatÃ¢â‚¬â€pixel-perfect and blazing fast.Ã¢â‚¬Â
+            </p>
+            <footer style="display:flex;align-items:center;gap:.8rem;" class="">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a47fdc81-bd26-49ad-af4d-e2e22283b996_320w.png" aria-hidden="true" style="width:3rem;height:3rem;border-radius:50%;object-fit:cover;">
+              <span class="">
+                <strong style="display:block;font-weight:500;" class="">
+                  Emilia Sauer
+                </strong>
+                <small style="color:var(--muted);" class="">
+                  Brand Director, Veridian Health
+                </small>
+              </span>
+            </footer>
+          </blockquote>
+          <blockquote style="margin:0;padding:3rem 0 4rem clamp(1rem,3vw,3rem);">
+            <p style="margin:0 0 4rem;font-size:clamp(1.4rem,2.5vw,2.4rem);line-height:1.15;letter-spacing:-.035em;">
+              Ã¢â‚¬Å“They donÃ¢â‚¬â„¢t just design websites. They design how a brand feels on
+              the internet. That distinction matters.Ã¢â‚¬Â
+            </p>
+            <footer style="display:flex;align-items:center;gap:.8rem;">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a4b4a91c-eb34-493f-93c5-9b21e5150b6f_320w.webp" aria-hidden="true" style="width:3rem;height:3rem;border-radius:50%;object-fit:cover;">
+              <span>
+                <strong style="display:block;font-weight:500;">
+                  Astrid Lindgren
+                </strong>
+                <small style="color:var(--muted);">
+                  Head of Digital, Formwerk
+                </small>
+              </span>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="awards" style="padding:clamp(5rem,9vw,9rem) 0;border-bottom:1px solid var(--strong);" class="">
+        <div style="padding:0 clamp(1rem,2vw,2rem) 1rem;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;">
+          Ã¢â€”Â AWARDS
+        </div>
+        <div class="flowing-menu-container flex flex-col w-full relative overflow-hidden" style="height: 65vh; min-height: 400px; max-height: 800px; margin-top: clamp(2rem, 4vw, 4rem);">
+          <div class="flowing-menu-item relative flex-1 text-center overflow-hidden border-t border-[var(--strong)] flex flex-col justify-center first:border-t-0 js-enabled">
+            <a class="flex items-center justify-center h-full w-full absolute inset-0 z-10 cursor-pointer uppercase no-underline font-medium text-[clamp(2.5rem,6vw,6rem)] text-[var(--fg)] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+              Motionographer
+            </a>
+            <div class="flowing-marquee absolute inset-0 w-full h-full pointer-events-none translate-y-[101%] bg-[var(--paper)] text-[#141414] z-20 overflow-hidden flex items-center">
+              <div class="flex h-full w-max flowing-marquee-inner items-center">
+                <div class="flex items-center flex-shrink-0">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Motionographer
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1dad0831-b247-4bfa-ad40-97f45c1b3a1d_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Motionographer
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1dad0831-b247-4bfa-ad40-97f45c1b3a1d_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Motionographer
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1dad0831-b247-4bfa-ad40-97f45c1b3a1d_800w.webp')"></div>
+                </div>
+                <div class="flex items-center flex-shrink-0" aria-hidden="true">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Motionographer
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1dad0831-b247-4bfa-ad40-97f45c1b3a1d_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Motionographer
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1dad0831-b247-4bfa-ad40-97f45c1b3a1d_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Motionographer
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1dad0831-b247-4bfa-ad40-97f45c1b3a1d_800w.webp')"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flowing-menu-item relative flex-1 text-center overflow-hidden border-t border-[var(--strong)] flex flex-col justify-center js-enabled">
+            <a class="flex items-center justify-center h-full w-full absolute inset-0 z-10 cursor-pointer uppercase no-underline font-medium text-[clamp(2.5rem,6vw,6rem)] text-[var(--fg)] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+              D&amp;AD
+            </a>
+            <div class="flowing-marquee absolute inset-0 w-full h-full pointer-events-none translate-y-[101%] bg-[#e67235] text-[#141414] z-20 overflow-hidden flex items-center">
+              <div class="flex h-full w-max flowing-marquee-inner items-center" style="animation-direction: reverse;">
+                <div class="flex items-center flex-shrink-0">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    D&amp;AD
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b8f8db61-da52-4775-acb5-334eb4a7a5ea_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    D&amp;AD
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b8f8db61-da52-4775-acb5-334eb4a7a5ea_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    D&amp;AD
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b8f8db61-da52-4775-acb5-334eb4a7a5ea_800w.webp')"></div>
+                </div>
+                <div class="flex items-center flex-shrink-0" aria-hidden="true">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    D&amp;AD
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b8f8db61-da52-4775-acb5-334eb4a7a5ea_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    D&amp;AD
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b8f8db61-da52-4775-acb5-334eb4a7a5ea_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    D&amp;AD
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b8f8db61-da52-4775-acb5-334eb4a7a5ea_800w.webp')"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flowing-menu-item relative flex-1 text-center overflow-hidden border-t border-[var(--strong)] flex flex-col justify-center js-enabled">
+            <a class="flex items-center justify-center h-full w-full absolute inset-0 z-10 cursor-pointer uppercase no-underline font-medium text-[clamp(2.5rem,6vw,6rem)] text-[var(--fg)] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+              Clio
+            </a>
+            <div class="flowing-marquee absolute inset-0 w-full h-full pointer-events-none translate-y-[101%] bg-[#afa3d7] text-[#141414] z-20 overflow-hidden flex items-center">
+              <div class="flex h-full w-max flowing-marquee-inner items-center">
+                <div class="flex items-center flex-shrink-0">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Clio
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/63813241-51b1-4e36-a62f-b31896215806_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Clio
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/63813241-51b1-4e36-a62f-b31896215806_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Clio
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/63813241-51b1-4e36-a62f-b31896215806_800w.webp')"></div>
+                </div>
+                <div class="flex items-center flex-shrink-0" aria-hidden="true">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Clio
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/63813241-51b1-4e36-a62f-b31896215806_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Clio
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/63813241-51b1-4e36-a62f-b31896215806_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Clio
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/63813241-51b1-4e36-a62f-b31896215806_800w.webp')"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flowing-menu-item relative flex-1 text-center overflow-hidden border-t border-[var(--strong)] flex flex-col justify-center js-enabled">
+            <a class="flex items-center justify-center h-full w-full absolute inset-0 z-10 cursor-pointer uppercase no-underline font-medium text-[clamp(2.5rem,6vw,6rem)] text-[var(--fg)] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+              Webby
+            </a>
+            <div class="flowing-marquee absolute inset-0 w-full h-full pointer-events-none translate-y-[101%] bg-[var(--acid)] text-[#141414] z-20 overflow-hidden flex items-center">
+              <div class="flex h-full w-max flowing-marquee-inner items-center" style="animation-direction: reverse;">
+                <div class="flex items-center flex-shrink-0">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Webby
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/afd2542e-9cf1-4837-9a49-1d80fa4187ea_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Webby
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/afd2542e-9cf1-4837-9a49-1d80fa4187ea_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Webby
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/afd2542e-9cf1-4837-9a49-1d80fa4187ea_800w.webp')"></div>
+                </div>
+                <div class="flex items-center flex-shrink-0" aria-hidden="true">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Webby
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/afd2542e-9cf1-4837-9a49-1d80fa4187ea_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Webby
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/afd2542e-9cf1-4837-9a49-1d80fa4187ea_800w.webp')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    Webby
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/afd2542e-9cf1-4837-9a49-1d80fa4187ea_800w.webp')"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flowing-menu-item relative flex-1 text-center overflow-hidden border-t border-[var(--strong)] flex flex-col justify-center js-enabled">
+            <a class="flex items-center justify-center h-full w-full absolute inset-0 z-10 cursor-pointer uppercase no-underline font-medium text-[clamp(2.5rem,6vw,6rem)] text-[var(--fg)] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+              ADC
+            </a>
+            <div class="flowing-marquee absolute inset-0 w-full h-full pointer-events-none translate-y-[101%] bg-[#e7b7a2] text-[#141414] z-20 overflow-hidden flex items-center">
+              <div class="flex h-full w-max flowing-marquee-inner items-center">
+                <div class="flex items-center flex-shrink-0">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    ADC
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/variants/2cfc7a4b-7b93-4383-bb69-3a3535aa9000/800w.png')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    ADC
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/variants/2cfc7a4b-7b93-4383-bb69-3a3535aa9000/800w.png')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    ADC
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/variants/2cfc7a4b-7b93-4383-bb69-3a3535aa9000/800w.png')"></div>
+                </div>
+                <div class="flex items-center flex-shrink-0" aria-hidden="true">
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    ADC
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/variants/2cfc7a4b-7b93-4383-bb69-3a3535aa9000/800w.png')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    ADC
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/variants/2cfc7a4b-7b93-4383-bb69-3a3535aa9000/800w.png')"></div>
+                  <span class="whitespace-nowrap uppercase font-normal text-[clamp(2.5rem,6vw,6rem)] leading-none px-[2vw] tracking-tight" style="font-family:Impact,'Arial Narrow',sans-serif;">
+                    ADC
+                  </span>
+                  <div class="w-[150px] md:w-[200px] h-[6vh] min-h-[40px] mx-[2vw] rounded-full bg-cover bg-center" style="background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/variants/2cfc7a4b-7b93-4383-bb69-3a3535aa9000/800w.png')"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          @keyframes flow-marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .flowing-marquee-inner {
+            animation: flow-marquee 12s linear infinite;
+            will-change: transform;
+          }
+          .flowing-menu-item:hover .flowing-marquee {
+            transform: translateY(0%) !important;
+          }
+          .flowing-menu-item:not(.js-enabled) .flowing-marquee {
+            transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+          }
+        </style>
+        <script>
+          (() => {
+            const items = document.querySelectorAll('.flowing-menu-item');
+            items.forEach(item => {
+              item.classList.add('js-enabled');
+              const marquee = item.querySelector('.flowing-marquee');
+              const inner = item.querySelector('.flowing-marquee-inner');
+              item.addEventListener('mouseenter', e => {
+                const rect = item.getBoundingClientRect();
+                const edge = (e.clientY - rect.top) < (rect.height / 2) ? 'top' : 'bottom';
+                marquee.style.transition = 'none';
+                inner.style.transition = 'none';
+                marquee.style.transform = edge === 'top' ? 'translateY(-101%)' : 'translateY(101%)';
+                inner.style.transform = edge === 'top' ? 'translateY(101%)' : 'translateY(-101%)';
+                void marquee.offsetWidth;
+                marquee.style.transition = 'transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)';
+                inner.style.transition = 'transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)';
+                marquee.style.transform = 'translateY(0%)';
+                inner.style.transform = 'translateY(0%)';
+              });
+              item.addEventListener('mouseleave', e => {
+                const rect = item.getBoundingClientRect();
+                const edge = (e.clientY - rect.top) < (rect.height / 2) ? 'top' : 'bottom';
+                marquee.style.transform = edge === 'top' ? 'translateY(-101%)' : 'translateY(101%)';
+                inner.style.transform = edge === 'top' ? 'translateY(101%)' : 'translateY(-101%)';
+              });
+            });
+          })();
+        </script>
+      </section>
+
+      <section id="process" style="padding:clamp(5rem,9vw,9rem) clamp(1rem,2vw,2rem);border-bottom:1px solid var(--strong);" class="">
+        <div style="padding-bottom:1rem;border-bottom:1px solid var(--strong);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;">
+          Ã¢â€”Â PROCESS
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,29rem),1fr));" class="">
+          <article data-reveal="" style="min-height:23rem;padding:2rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);" class="">
+            <iconify-icon icon="solar:clapperboard-edit-linear" stroke-width="1.5" aria-hidden="true" style="display:block;font-size:3rem;margin-bottom:6rem;">
+              Ã¢â€“Â¡
+            </iconify-icon>
+            <h3 style="font-size:clamp(2rem,4vw,4rem);font-weight:500;letter-spacing:-.045em;margin:0 0 1rem;">
+              Storyboarding
+            </h3>
+            <p style="max-width:36rem;color:var(--muted);">
+              We begin by mapping out the visual narrative, pacing, and camera
+              angles to construct a comprehensive animatic. This guarantees
+              every single frame supports the productÃ¢â‚¬â„¢s ultimate marketing
+              goals.
+            </p>
+          </article>
+          <article data-reveal="" style="min-height:23rem;padding:2rem;border-bottom:1px solid var(--line);">
+            <iconify-icon icon="solar:cube-linear" stroke-width="1.5" aria-hidden="true" style="display:block;font-size:3rem;margin-bottom:6rem;">
+              Ã¢â€”â€¡
+            </iconify-icon>
+            <h3 style="font-size:clamp(2rem,4vw,4rem);font-weight:500;letter-spacing:-.045em;margin:0 0 1rem;">
+              Asset Modeling
+            </h3>
+            <p style="max-width:36rem;color:var(--muted);">
+              We translate 2D concepts into flawless, high-polygon 3D meshes.
+              Through rigorous texturing and lighting passes, we construct
+              photorealistic digital twins that elevate the productÃ¢â‚¬â„¢s perceived
+              value.
+            </p>
+          </article>
+          <article data-reveal="" style="min-height:23rem;padding:2rem;border-right:1px solid var(--line);">
+            <iconify-icon icon="solar:atom-linear" stroke-width="1.5" aria-hidden="true" style="display:block;font-size:3rem;margin-bottom:6rem;">
+              Ã¢â€”Å½
+            </iconify-icon>
+            <h3 style="font-size:clamp(2rem,4vw,4rem);font-weight:500;letter-spacing:-.045em;margin:0 0 1rem;">
+              Motion &amp; Simulation
+            </h3>
+            <p style="max-width:36rem;color:var(--muted);">
+              We bring static scenes to life with realistic physics and kinetic
+              dynamics. Our focus is on fluid gravity simulations, cloth
+              dynamics, and absolute physical accuracy.
+            </p>
+          </article>
+          <article data-reveal="" style="min-height:23rem;padding:2rem;">
+            <iconify-icon icon="solar:layers-linear" stroke-width="1.5" aria-hidden="true" style="display:block;font-size:3rem;margin-bottom:6rem;">
+              Ã¢â€“Â±
+            </iconify-icon>
+            <h3 style="font-size:clamp(2rem,4vw,4rem);font-weight:500;letter-spacing:-.045em;margin:0 0 1rem;">
+              Final Compositing
+            </h3>
+            <p style="max-width:36rem;color:var(--muted);">
+              After color grading and multi-pass rendering, we stitch the visual
+              sequence and deliver a pristine, broadcast-ready master file.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="team" style="padding:clamp(5rem,9vw,9rem) 0;border-bottom:1px solid var(--strong);overflow:hidden;" class="">
+        <div style="margin:0 clamp(1rem,2vw,2rem) 3rem;padding-bottom:1rem;border-bottom:1px solid var(--strong);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;">
+          Ã¢â€”Â TEAM
+        </div>
+
+        <div class="scroll-velocity-container relative overflow-hidden w-full" style="padding: 1rem 0; border-bottom: 1px solid var(--strong);">
+          <div class="scroll-velocity-scroller flex whitespace-nowrap text-center drop-shadow" style="font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(4.8rem,11vw,12rem);line-height:.9;letter-spacing:-.05em;will-change:transform;" data-velocity="-100">
+            <span class="flex-shrink-0 px-8">
+              Juliana Mercer
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Creative Director
+              </small>
+              Ã¢â€“Â  Jerome Christian
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Lead Motion Design
+              </small>
+              Ã¢â€“Â  Emelia Thorne
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Head of 3D
+              </small>
+              Ã¢â€“Â  Nora Vance
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Lead Lighting
+              </small>
+              Ã¢â€“Â 
+            </span>
+            <span class="flex-shrink-0 px-8">
+              Juliana Mercer
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Creative Director
+              </small>
+              Ã¢â€“Â  Jerome Christian
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Lead Motion Design
+              </small>
+              Ã¢â€“Â  Emelia Thorne
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Head of 3D
+              </small>
+              Ã¢â€“Â  Nora Vance
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Lead Lighting
+              </small>
+              Ã¢â€“Â 
+            </span>
+            <span class="flex-shrink-0 px-8">
+              Juliana Mercer
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Creative Director
+              </small>
+              Ã¢â€“Â  Jerome Christian
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Lead Motion Design
+              </small>
+              Ã¢â€“Â  Emelia Thorne
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Head of 3D
+              </small>
+              Ã¢â€“Â  Nora Vance
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Lead Lighting
+              </small>
+              Ã¢â€“Â 
+            </span>
+            <span class="flex-shrink-0 px-8">
+              Juliana Mercer
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Creative Director
+              </small>
+              Ã¢â€“Â  Jerome Christian
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Lead Motion Design
+              </small>
+              Ã¢â€“Â  Emelia Thorne
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Head of 3D
+              </small>
+              Ã¢â€“Â  Nora Vance
+              <small style="font-family:Inter,Arial,sans-serif;font-size:.13em;letter-spacing:0;color:var(--muted);">
+                Lead Lighting
+              </small>
+              Ã¢â€“Â 
+            </span>
+          </div>
+        </div>
+
+        <div class="scroll-velocity-container relative overflow-hidden w-full" style="padding: 1rem 0;">
+          <div class="scroll-velocity-scroller flex whitespace-nowrap text-center drop-shadow" style="font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(4.8rem,11vw,12rem);line-height:.9;letter-spacing:-.05em;will-change:transform;" data-velocity="100">
+            <span class="flex-shrink-0 px-8">
+              Emelia Thorne Ã¢â€“Â  Nora Vance Ã¢â€“Â  Juliana Mercer Ã¢â€“Â  Jerome Christian Ã¢â€“Â 
+            </span>
+            <span class="flex-shrink-0 px-8">
+              Emelia Thorne Ã¢â€“Â  Nora Vance Ã¢â€“Â  Juliana Mercer Ã¢â€“Â  Jerome Christian Ã¢â€“Â 
+            </span>
+            <span class="flex-shrink-0 px-8">
+              Emelia Thorne Ã¢â€“Â  Nora Vance Ã¢â€“Â  Juliana Mercer Ã¢â€“Â  Jerome Christian Ã¢â€“Â 
+            </span>
+            <span class="flex-shrink-0 px-8">
+              Emelia Thorne Ã¢â€“Â  Nora Vance Ã¢â€“Â  Juliana Mercer Ã¢â€“Â  Jerome Christian Ã¢â€“Â 
+            </span>
+            <span class="flex-shrink-0 px-8">
+              Emelia Thorne Ã¢â€“Â  Nora Vance Ã¢â€“Â  Juliana Mercer Ã¢â€“Â  Jerome Christian Ã¢â€“Â 
+            </span>
+            <span class="flex-shrink-0 px-8">
+              Emelia Thorne Ã¢â€“Â  Nora Vance Ã¢â€“Â  Juliana Mercer Ã¢â€“Â  Jerome Christian Ã¢â€“Â 
+            </span>
+          </div>
+        </div>
+
+        <script>
+          (() => {
+            const scrollers = document.querySelectorAll('#team .scroll-velocity-scroller');
+            if (!scrollers.length) return;
+            let scrollY = window.scrollY;
+            let lastScrollY = scrollY;
+            let scrollVelocity = 0;
+            let smoothVelocity = 0;
+
+            window.addEventListener('scroll', () => {
+              scrollY = window.scrollY;
+              scrollVelocity = scrollY - lastScrollY;
+              lastScrollY = scrollY;
+            }, { passive: true });
+
+            const state = Array.from(scrollers).map(scroller => ({
+              el: scroller,
+              baseVelocity: parseFloat(scroller.dataset.velocity) || 100,
+              x: 0,
+              directionFactor: 1
+            }));
+
+            let lastTime = performance.now();
+
+            function animate(now) {
+              const delta = Math.min(now - lastTime, 50);
+              lastTime = now;
+
+              smoothVelocity += (scrollVelocity - smoothVelocity) * 0.2;
+              scrollVelocity *= 0.9;
+
+              const velocityFactor = Math.min(5, Math.abs(smoothVelocity) * 0.05);
+
+              state.forEach(s => {
+                let moveBy = s.directionFactor * s.baseVelocity * (delta / 1000);
+
+                if (smoothVelocity < -1) {
+                  s.directionFactor = -1;
+                } else if (smoothVelocity > 1) {
+                  s.directionFactor = 1;
+                }
+
+                moveBy += s.directionFactor * moveBy * velocityFactor;
+                s.x += moveBy;
+
+                const firstChild = s.el.firstElementChild;
+                if (firstChild) {
+                  const width = firstChild.offsetWidth;
+                  if (width > 0) {
+                    s.x = ((((s.x + width) % width) + width) % width) - width;
+                  }
+                }
+
+                s.el.style.transform = `translate3d(${s.x}px, 0, 0)`;
+              });
+
+              requestAnimationFrame(animate);
+            }
+
+            requestAnimationFrame(animate);
+          })();
+        </script>
+      </section>
+
+      <section id="pricing" style="padding:clamp(5rem,9vw,9rem) clamp(1rem,2vw,2rem);background:#1a1a1a;border-bottom:1px solid var(--strong);" class="">
+        <div style="padding-bottom:1rem;margin-bottom:2rem;border-bottom:1px solid var(--strong);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;">
+          Ã¢â€”Â PRICING
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:1px;background:#141414;">
+          <article style="display:flex;flex-direction:column;min-height:39rem;padding:1.5rem;background:var(--paper);color:#141414;">
+            <div aria-hidden="true" style="font-size:4rem;line-height:1;">
+              Ã¢â€”Â©
+            </div>
+            <h3 style="font-size:2rem;font-weight:500;letter-spacing:-.04em;margin:3rem 0 .5rem;">
+              Landing Page
+            </h3>
+            <strong style="font-size:1.5rem;font-weight:500;">$2,500</strong>
+            <ul style="list-style:none;padding:0;margin:2rem 0 auto;border-top:1px solid rgba(0,0,0,.2);">
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Custom UI/UX Design
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Framer Development
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Fully Responsive Layouts
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Standard Scroll Animations
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                1-Week Delivery
+              </li>
+            </ul>
+            <a href="#contact" style="display:grid;grid-template-columns:1fr 4rem;align-items:stretch;color:#141414;text-decoration:none;border:1px solid #141414;margin-top:2rem;">
+              <span style="padding:1rem;">Get Started</span>
+              <span style="display:grid;place-items:center;background:#141414;color:white;overflow:hidden;font-size:1.5rem;">
+                Ã¢â€ â€”
+              </span>
+            </a>
+          </article>
+          <article style="display:flex;flex-direction:column;min-height:39rem;padding:1.5rem;background:var(--paper);color:#141414;">
+            <div aria-hidden="true" style="font-size:4rem;line-height:1;">
+              Ã¢â€”â€™
+            </div>
+            <h3 style="font-size:2rem;font-weight:500;letter-spacing:-.04em;margin:3rem 0 .5rem;">
+              Full Website
+            </h3>
+            <strong style="font-size:1.5rem;font-weight:500;">$6,500</strong>
+            <ul style="list-style:none;padding:0;margin:2rem 0 auto;border-top:1px solid rgba(0,0,0,.2);">
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Up to 6 Custom Pages
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                CMS Setup &amp; Integration
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Advanced Framer Animations
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Technical SEO Optimization
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                3-Week Delivery
+              </li>
+            </ul>
+            <a href="#contact" style="display:grid;grid-template-columns:1fr 4rem;align-items:stretch;color:#141414;text-decoration:none;border:1px solid #141414;margin-top:2rem;">
+              <span style="padding:1rem;">Start Project</span>
+              <span style="display:grid;place-items:center;background:#141414;color:white;overflow:hidden;font-size:1.5rem;">
+                Ã¢â€ â€”
+              </span>
+            </a>
+          </article>
+          <article style="display:flex;flex-direction:column;min-height:39rem;padding:1.5rem;background:var(--paper);color:#141414;">
+            <div aria-hidden="true" style="font-size:4rem;line-height:1;">
+              Ã¢Å’Â
+            </div>
+            <h3 style="font-size:2rem;font-weight:500;letter-spacing:-.04em;margin:3rem 0 .5rem;">
+              Agency Retainer
+            </h3>
+            <strong style="font-size:1.5rem;font-weight:500;">$4,500</strong>
+            <ul style="list-style:none;padding:0;margin:2rem 0 auto;border-top:1px solid rgba(0,0,0,.2);">
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Unlimited Design Requests
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Custom Code &amp; Components
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Ongoing Framer Maintenance
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                48-Hour Turnaround Times
+              </li>
+              <li style="padding:.7rem 0;border-bottom:1px solid rgba(0,0,0,.13);">
+                Dedicated Slack Channel
+              </li>
+            </ul>
+            <a href="#contact" style="display:grid;grid-template-columns:1fr 4rem;align-items:stretch;color:#141414;text-decoration:none;border:1px solid #141414;margin-top:2rem;">
+              <span style="padding:1rem;">Get Started</span>
+              <span style="display:grid;place-items:center;background:#141414;color:white;overflow:hidden;font-size:1.5rem;">
+                Ã¢â€ â€”
+              </span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="articles" style="padding:clamp(5rem,9vw,9rem) clamp(1rem,2vw,2rem);border-bottom:1px solid var(--strong);" class="">
+        <div style="padding-bottom:1rem;margin-bottom:2rem;border-bottom:1px solid var(--strong);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.75rem;">
+          Ã¢â€”Â ARTICLES
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:2rem;" class="">
+          <article data-project="Vibe Coding" class="">
+            <div data-hover-media="" style="position:relative;aspect-ratio:1;overflow:hidden;background:#e67235;" class="">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/68ed498b-1878-4ade-8cbc-ee0358b3120a_1600w.webp" alt="Vibe Coding" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+              <canvas data-pixels="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;" class=""></canvas>
+            </div>
+            <small style="display:block;color:var(--muted);margin-top:1rem;" class="">
+              Workflow &amp; Automation
+            </small>
+            <h3 style="font-size:clamp(1.5rem,2.5vw,2.4rem);font-weight:500;line-height:1.05;letter-spacing:-.04em;" class="">
+              Vibe Coding: Automating Agency Workflows with AI
+            </h3>
+          </article>
+          <article data-project="WebGL Engineering">
+            <div data-hover-media="" style="position:relative;aspect-ratio:1;overflow:hidden;background:#afa3d7;">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a2052fda-9c3d-42a0-9534-bde01ab59393_1600w.webp" alt="WebGL Engineering" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+              <canvas data-pixels="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;"></canvas>
+            </div>
+            <small style="display:block;color:var(--muted);margin-top:1rem;">
+              WebGL &amp; Framer
+            </small>
+            <h3 style="font-size:clamp(1.5rem,2.5vw,2.4rem);font-weight:500;line-height:1.05;letter-spacing:-.04em;">
+              Engineering Awwwards-Winning Framer Components
+            </h3>
+          </article>
+          <article data-project="Launch Blueprint">
+            <div data-hover-media="" style="position:relative;aspect-ratio:1;overflow:hidden;background:#e7b7a2;">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/7149b56f-b0a9-4b9d-ab2c-3a8c0501bcfa_1600w.webp" alt="Launch Blueprint" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+              <canvas data-pixels="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;"></canvas>
+            </div>
+            <small style="display:block;color:var(--muted);margin-top:1rem;">
+              Marketing
+            </small>
+            <h3 style="font-size:clamp(1.5rem,2.5vw,2.4rem);font-weight:500;line-height:1.05;letter-spacing:-.04em;">
+              The 60-Day Launch Blueprint for Digital Assets
+            </h3>
+          </article>
+        </div>
+      </section>
+
+      <section style="position:relative;padding:clamp(7rem,13vw,14rem) clamp(1rem,2vw,2rem);background:var(--paper);color:#141414;overflow:hidden;border-bottom:1px solid rgba(0,0,0,.18);" class="">
+        <div id="blockField" aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;"></div>
+        <div style="position:relative;z-index:1;" class="">
+          <h2 style="margin:0;font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(5rem,14vw,15rem);font-weight:500;line-height:.8;letter-spacing:-.055em;">
+            liked the demo?
+            <br>
+            thereÃ¢â‚¬â„¢s m
+            <span style="display:inline-block;width:.72em;height:.72em;vertical-align:-.04em;overflow:hidden;background:#6f65a7;">
+              <img data-art="wave" aria-hidden="true" style="width:100%;height:100%;display:block;" src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1007723b-b12a-4bab-a509-d069026135f4_3840w.png" alt="">
+            </span>
+            re.
+          </h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:2rem;margin-top:5rem;align-items:end;" class="">
+            <p style="max-width:38rem;font-size:clamp(1.2rem,2vw,2rem);line-height:1.2;letter-spacing:-.025em;" class="">
+              Dive into our collection of meticulously crafted Framer assets. We
+              talk design, code, and aesthetics daily across our channels.
+            </p>
+            <a href="#contact" style="justify-self:end;display:grid;grid-template-columns:1fr 4rem;color:#141414;text-decoration:none;border:1px solid #141414;">
+              <span style="padding:1.15rem 1.4rem;background:white;">
+                VISIT OUR MARKETPLACE
+              </span>
+              <span style="display:grid;place-items:center;font-size:1.5rem;">
+                Ã¢â€ â€”
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="pt-[clamp(5rem,9vw,9rem)] border-b border-[var(--strong)]">
+        <div class="px-[clamp(1rem,2vw,2rem)] pb-16">
+          <div class="font-mono text-xs mb-8 text-[var(--muted)]">
+            Ã¢â€”Â THE DETAILS
+          </div>
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <h2 class="text-[clamp(2.5rem,5vw,5rem)] font-medium leading-[0.95] tracking-tight m-0 max-w-[45rem]">
+              Everything you need to know about utilizing the RenderLab
+              template.
+            </h2>
+            <p class="max-w-[20rem] text-[var(--muted)] m-0 md:pb-2">
+              Need specific technical support or custom component adjustments?
+              Drop a message to our studio teamÃ¢â‚¬â€weÃ¢â‚¬â„¢ve got you covered.
+            </p>
+          </div>
+        </div>
+
+        <div id="accordions" class="flex flex-col border-t border-[var(--strong)]">
+          <details class="group bg-transparent text-[var(--fg)] hover:bg-[var(--paper)] hover:text-[#141414] open:bg-[var(--paper)] open:text-[#141414] transition-colors duration-300 border-b border-[var(--strong)]" open="">
+            <summary class="flex items-center justify-between p-[clamp(1.5rem,3vw,3rem)] cursor-pointer list-none text-xl md:text-3xl font-medium tracking-tight">
+              <span class="flex items-center gap-[clamp(1.5rem,4vw,3.5rem)]">
+                <span class="font-mono text-sm opacity-50 font-normal">01</span>
+                How easy is it to customize the RenderLab template?
+              </span>
+              <span data-chevron="" class="text-3xl font-light leading-none" style="transform:rotate(180deg);">
+                Ã¢Å’â€ž
+              </span>
+            </summary>
+            <div class="px-[clamp(1.5rem,3vw,3rem)] pb-[clamp(2rem,4vw,4rem)] ml-[clamp(3rem,6vw,5.5rem)]">
+              <p class="m-0 text-base md:text-lg max-w-[40rem] opacity-80">
+                Typography, content, color tokens, imagery and layouts are
+                structured for direct editing while preserving the motion
+                system.
+              </p>
+            </div>
+          </details>
+          <details class="group bg-transparent text-[var(--fg)] hover:bg-[var(--paper)] hover:text-[#141414] open:bg-[var(--paper)] open:text-[#141414] transition-colors duration-300 border-b border-[var(--strong)]">
+            <summary class="flex items-center justify-between p-[clamp(1.5rem,3vw,3rem)] cursor-pointer list-none text-xl md:text-3xl font-medium tracking-tight">
+              <span class="flex items-center gap-[clamp(1.5rem,4vw,3.5rem)]">
+                <span class="font-mono text-sm opacity-50 font-normal">02</span>
+                Do the interactive components work right out of the box?
+              </span>
+              <span data-chevron="" class="text-3xl font-light leading-none">
+                Ã¢Å’â€ž
+              </span>
+            </summary>
+            <div class="px-[clamp(1.5rem,3vw,3rem)] pb-[clamp(2rem,4vw,4rem)] ml-[clamp(3rem,6vw,5.5rem)]">
+              <p class="m-0 text-base md:text-lg max-w-[40rem] opacity-80">
+                Yes. Pointer, touch, keyboard and reduced-motion behaviors are
+                included and initialized automatically.
+              </p>
+            </div>
+          </details>
+          <details class="group bg-transparent text-[var(--fg)] hover:bg-[var(--paper)] hover:text-[#141414] open:bg-[var(--paper)] open:text-[#141414] transition-colors duration-300 border-b border-[var(--strong)]">
+            <summary class="flex items-center justify-between p-[clamp(1.5rem,3vw,3rem)] cursor-pointer list-none text-xl md:text-3xl font-medium tracking-tight">
+              <span class="flex items-center gap-[clamp(1.5rem,4vw,3.5rem)]">
+                <span class="font-mono text-sm opacity-50 font-normal">03</span>
+                Can I use this template for multiple client projects?
+              </span>
+              <span data-chevron="" class="text-3xl font-light leading-none">
+                Ã¢Å’â€ž
+              </span>
+            </summary>
+            <div class="px-[clamp(1.5rem,3vw,3rem)] pb-[clamp(2rem,4vw,4rem)] ml-[clamp(3rem,6vw,5.5rem)]">
+              <p class="m-0 text-base md:text-lg max-w-[40rem] opacity-80">
+                A studio license can cover multiple commercial projects.
+                Individual licenses are intended for one published property.
+              </p>
+            </div>
+          </details>
+          <details class="group bg-transparent text-[var(--fg)] hover:bg-[var(--paper)] hover:text-[#141414] open:bg-[var(--paper)] open:text-[#141414] transition-colors duration-300 border-b border-[var(--strong)]">
+            <summary class="flex items-center justify-between p-[clamp(1.5rem,3vw,3rem)] cursor-pointer list-none text-xl md:text-3xl font-medium tracking-tight">
+              <span class="flex items-center gap-[clamp(1.5rem,4vw,3.5rem)]">
+                <span class="font-mono text-sm opacity-50 font-normal">04</span>
+                Do I need to know React or code to use the advanced effects?
+              </span>
+              <span data-chevron="" class="text-3xl font-light leading-none">
+                Ã¢Å’â€ž
+              </span>
+            </summary>
+            <div class="px-[clamp(1.5rem,3vw,3rem)] pb-[clamp(2rem,4vw,4rem)] ml-[clamp(3rem,6vw,5.5rem)]">
+              <p class="m-0 text-base md:text-lg max-w-[40rem] opacity-80">
+                No framework knowledge is required. Advanced effects use
+                isolated, documented controls and accessible fallbacks.
+              </p>
+            </div>
+          </details>
+          <details class="group bg-transparent text-[var(--fg)] hover:bg-[var(--paper)] hover:text-[#141414] open:bg-[var(--paper)] open:text-[#141414] transition-colors duration-300 border-b border-[var(--strong)]">
+            <summary class="flex items-center justify-between p-[clamp(1.5rem,3vw,3rem)] cursor-pointer list-none text-xl md:text-3xl font-medium tracking-tight">
+              <span class="flex items-center gap-[clamp(1.5rem,4vw,3.5rem)]">
+                <span class="font-mono text-sm opacity-50 font-normal">05</span>
+                Is the template optimized for modern SEO standards?
+              </span>
+              <span data-chevron="" class="text-3xl font-light leading-none">
+                Ã¢Å’â€ž
+              </span>
+            </summary>
+            <div class="px-[clamp(1.5rem,3vw,3rem)] pb-[clamp(2rem,4vw,4rem)] ml-[clamp(3rem,6vw,5.5rem)]">
+              <p class="m-0 text-base md:text-lg max-w-[40rem] opacity-80">
+                Yes. It uses semantic structure, descriptive metadata,
+                accessible controls and performance-conscious animation.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section style="padding:clamp(5rem,9vw,9rem) 0 0;overflow:hidden;border-bottom:1px solid var(--strong)" class="" id="contact">
+        <div data-marquee="" data-speed="-38" style="display:flex;width:max-content;will-change:transform;font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(8rem,22vw,24rem);font-weight:500;line-height:.8;letter-spacing:-.055em;white-space:nowrap;" class="">
+          <span class="">
+            get in
+            <span style="display:inline-block;width:.74em;height:.68em;vertical-align:-.02em;overflow:hidden;">
+              <canvas data-art="hands" aria-label="Abstract reaching hands" style="display:block;width:100%;height:100%;"></canvas>
+            </span>
+            touch&nbsp;
+          </span>
+          <span aria-hidden="true">
+            get in
+            <span style="display:inline-block;width:.74em;height:.68em;vertical-align:-.02em;overflow:hidden;">
+              <canvas data-art="hands" style="display:block;width:100%;height:100%;"></canvas>
+            </span>
+            touch&nbsp;
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <footer style="position:relative;background:var(--bg);color:var(--fg);border-top:1px solid var(--strong);padding:clamp(4rem,8vw,8rem) clamp(1rem,2vw,2rem);display:flex;flex-direction:column;gap:4rem;">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="flex flex-col gap-4">
+          <span class="font-mono text-xs text-[var(--muted)]">Ã¢â€”Â RENDERLAB</span>
+          <p class="max-w-xs text-base opacity-80 leading-relaxed m-0">
+            A premium motion house specializing in cinematic 3D rendering,
+            motion direction, CGI, and VFX. We build physically expressive
+            digital worlds.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <span class="font-mono text-xs text-[var(--muted)]">
+            Ã¢â€”Â NAVIGATION
+          </span>
+          <a href="#hero" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            Home
+          </a>
+          <a href="#work" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            Work
+          </a>
+          <a href="#services" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            Services
+          </a>
+          <a href="#pricing" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            Pricing
+          </a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <span class="font-mono text-xs text-[var(--muted)]">
+            Ã¢â€”Â EXPERIENCES
+          </span>
+          <a href="#articles" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            Blogs
+          </a>
+          <a href="#faq" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            FAQ
+          </a>
+          <a href="#contact" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            Contact
+          </a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <span class="font-mono text-xs text-[var(--muted)]">Ã¢â€”Â CONNECT</span>
+          <a href="#" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            Instagram
+          </a>
+          <a href="#" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            Twitter / X
+          </a>
+          <a href="#" class="text-[var(--fg)] hover:text-[var(--acid)] transition-colors no-underline">
+            Vimeo
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-8 border-t border-[var(--line)]">
+        <div style="font-family:Impact,'Arial Narrow',sans-serif; font-size:clamp(3rem,8vw,8rem); line-height:0.8; letter-spacing:-.04em; text-transform:uppercase; color:var(--paper);" class="m-0">
+          RENDERLAB
+        </div>
+        <div class="font-mono text-xs text-[var(--muted)]">
+          Ã‚Â© 2026 RENDERLAB STUDIO. ALL RIGHTS RESERVED.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Removed malformed inline script to restore valid source. */
+    </script>
+
+    <style>
+          html {
+            scroll-behavior:;
+            background: var(--bg       * {
+            box-sizing: border-box;
+          }
+
+         selection {
+            background: var(--acid);
+            color: #101010;
+          }
+
+          :focus-visible {
+            outline 2px solid var(--acid);
+            outline-offset: 4px;
+          }
+
+         ,
+          button,
+          summary,
+       article,
+          [data-award {
+            transition: color .s, background-color .25s ease, border .25s ease, opacity .25s ease, transform .25s ease;
+          }
+
+          a {
+            color: var(--acid) !;
+       }
+
+       header a {
+       background varline);
+             [data-award]:hover {
+            background:(--paper);
+            color: #141414;
+            padding-inline: 1rem;
+          }
+
+          #pricing {
+       transition: transform .4 cubic-bezier(.22,1,.36,1), background-color .3s ease;
+          }
+
+          #pricing article:hover {
+            position: relative;
+            z-index: 2;
+            transform: translateY(-.5rem);
+            background #fff;
+          }
+
+       #pricing article:hover {
+           : #141;
+            color # !important;
+          }
+
+          #accordions summary::-webkit-details-marker {
+            display none;
+          }
+
+          #play canvas {
+            animation: manifestoArt 7s linear infinite;
+          }
+
+          @keyframes manifestoArt {
+            { transform: rotate(360deg) scale(1.12); }
+          }
+
+          @media (max-width: 760px) {
+            header nav {
+              grid-template:1fr fr 4rem 1fr !important;
+              min-height: 4rem !important;
+            }
+
+            header nav a:last {
+              display none !important;
+            }
+
+            #hero {
+              min-height: calc(100svh - 4rem) !important;
+            }
+
+            #heroRing {
+              width: 112vw !;
+              height: 72vw !important;
+            }
+
+           services > div > div > div:last-child {
+       grid-template-columns: 1fr !important;
+              align-content: center;
+              gap: 0 !important;
+            }
+
+            #serviceGeometry {
+              height: 35sv !important;
+              font-size: clamp(11rem,48vw,18rem) !important;
+            }
+
+            #serviceTitle {
+             -size clamp(3.2rem,15vw,5rem)important;
+                impact,
+       blockquote {
+       padding-inline:0 !important;
+              border-right: 0 !;
+              border-bottom: 1px solid var(--line);
+            }
+
+            [-aw] {
+              grid-template-columns: 3.5 min(0,1fr) !important;
+              min-height: 6.5rem !important;
+            }
+
+            [data-award] > span:last-child {
+              display none;
+                 #process article {
+              min-height: auto !;
+       padding: 2rem 0 !important;
+              border-right: 0 !important;
+            }
+
+            #process iconify-icon {
+              margin-bottom:3rem !important;
+            }
+
+            #faq {
+              grid-template-columns: 1fr !important;
+            }
+
+            footer {
+              min-height: 62svh !important;
+            }
+          }
+
+          @media (prefers-reduced-motion: reduce) {
+            html {
+              scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+       *::after {
+              animation-duration: .001ms !important        animation-iteration-count: 1 !important;
+       transition-duration:001ms !important;
+       }
+
+       #progress {
+              display: none;
+               }
+        </style</body>
+      </html>
+    </style>
+
+    <script data-aura-video-controller="true">
+      (function () {
+        function playVideo(video) {
+          var promise = video.play();
+          if (promise && typeof promise.catch === "function") {
+            promise.catch(function () {});
+          }
+        }
+
+        function setupVideo(video) {
+          if (video.__auraVideoReady === true) return;
+          video.__auraVideoReady = true;
+          video.removeAttribute("data-aura-video-ready");
+          video.removeAttribute("data-aura-video-played");
+          video.muted = true;
+          video.playsInline = true;
+
+          var preset = video.dataset.auraVideoPreset || "loop-in-view";
+          if (preset === "hover") {
+            video.addEventListener("mouseenter", function () {
+              playVideo(video);
+            });
+            video.addEventListener("mouseleave", function () {
+              video.pause();
+              video.currentTime = 0;
+            });
+            return;
+          }
+
+          if (!("IntersectionObserver" in window)) {
+            playVideo(video);
+            return;
+          }
+
+          var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                if (preset === "play-once" && video.__auraVideoPlayed === true) {
+                  return;
+                }
+                playVideo(video);
+              } else {
+                video.pause();
+              }
+            });
+          }, { threshold: 0.35 });
+
+          if (preset === "play-once") {
+            video.addEventListener("ended", function () {
+              video.__auraVideoPlayed = true;
+            }, { once: true });
+          }
+
+          observer.observe(video);
+        }
+
+        function setupVideos() {
+          document
+            .querySelectorAll("video[data-aura-video-preset]")
+            .forEach(setupVideo);
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", setupVideos);
+        } else {
+          setupVideos();
+        }
+      })();
+    </script>
+  
+</body></html>
+
+
